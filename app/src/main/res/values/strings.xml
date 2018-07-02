@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">MyFood</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Trang chính</string>
+    <string name="nav_bookmark">Đã lưu</string>
+    <string name="nav_orders">Đơn hàng</string>
+    <string name="nav_profile">Cá nhân</string>
+
+    <string name="nav_about_us">Giới thiệu về chúng tôi</string>
+    <string name="nav_privacy_policy">Chính sách sử dụng</string>
+
+    <!-- Toolbar titles-->
+    <string-array name="pager_title">
+        <item>Trang chính</item>
+        <item>Bản đồ</item>
+        <item>Đã lưu</item>
+        <item>Đơn hàng</item>
+    </string-array>
+    <string-array name="criteria_list">
+        <item>Gần tôi</item>
+        <item>Điểm cao</item>
+        <item>Tương tác</item>
+        <item>Giá thấp đến cao</item>
+        <item>Giá cao đến thấp</item>
+    </string-array>
+
+    <!--Action menu -->
+    <string name="search_label">Tìm kiếm</string>
+    <string name="search_hint">Nhập tên quán ăn ...</string>
+
+    //Other
+    <string name="phienban">Phiên bản</string>
+    <string name="dangtai">Đang tải...</string>
+    <string name="email">Email</string>
+    <string name="matkhau">Mật khẩu</string>
+    <string name="dangnhap">Đăng nhập</string>
+    <string name="hoac">Hoặc</string>
+    <string name="app_id">177837392877482</string>
+    <string name="facebook_app_id">177837392877482</string>
+    <string name="fb_login_protocol_scheme">fb177837392877482</string>
+    <string name="dangnhapfacebook">Đăng nhập bằng Facebook</string>
+    <string name="dangnhapbanggoogle">Đăng nhập bằng Google</string>
+    <string name="quenmatkhau">Quên mật khẩu ?</string>
+    <string name="dangkymoi"><u>Đăng ký mới</u></string>
+    <string name="nhaplaimatkhau">Nhập lại mật khẩu</string>
+    <string name="dangky">Đăng ký</string>
+    <string name="thongbaoloidangky">Bạn chưa nhập đủ thông tin</string>
+    <string name="thongbaonhaplaimatkhau">Vui lòng nhập giống mật khẩu ở trên </string>
+    <string name="thongbaodangkythanhcong">Tạo tài khoản thành công </string>
+    <string name="dangxuly">Đang xử lý </string>
+    <string name="loiketnoi">Lỗi kết nối </string>
+    <string name="thongbaodangnhapthanhcong">Đăng nhập thành công</string>
+    <string name="thongbaodangnhapthatbai">Tài khoản không hợp lệ!</string>
+    <string name="khoiphucmatkhau">Khôi phục mật khẩu</string>
+    <string name="chuoikhoiphucmatkhau">Bạn vui lòng nhập địa chỉ Email vào khung bên dưới để khôi phục mật khẩu!</string>
+    <string name="guimail">Gửi email</string>
+    <string name="chuoithanhvien">Bạn không phải là thành viên? </string>
+    <string name="thongbaoemailkhonghople">Email không hợp lệ!</string>
+    <string name="thongbaoguimailthanhcong">Gửi email thành công!</string>
+    <string name="odau">Ở đâu</string>
+    <string name="angi">Ăn gì ?</string>
+    <string name="moinhat">Mới nhất</string>
+    <string name="danhmuc">Danh mục</string>
+    <string name="khuvuc">HN</string>
+    <string name="gantoi">Gần tôi</string>
+    <string name="giaohang">Giao hàng </string>
+    <string name="gameandfun">Game and fun</string>
+    <string name="danhgia">Đánh giá</string>
+    <string name="blogs">Blogs </string>
+    <string name="topmember">Top thành viên</string>
+    <string name="datmon">Đặt giao hàng</string>
+    <string name="taianh">Tải ảnh</string>
+    <string name="luulai">Lưu lại</string>
+    <string name="binhluan">Bình luận</string>
+    <string name="checkin">Check-in</string>
+    <string name="chiase">Chia sẽ</string>
+    <string name="dangmocua">Đang mở cửa</string>
+    <string name="dadongcua">Đã đóng cửa</string>
+    <string name="capnhatwifi">Cập nhật wifi</string>
+    <string name="nhaptenwifi">Nhập tên wifi</string>
+    <string name="nhapmatkhauwifi">Nhập mật khẩu wifi</string>
+    <string name="dongy">Đồng ý</string>
+    <string name="loithemwifi">Vui lòng nhập đầy đủ thông tin wifi</string>
+    <string name="themthanhcong">Thêm thành công!</string>
+    <string name="dang">Đăng</string>
+    <string name="thucdon">Thực đơn</string>
+    <string name="tenquanan">Tên quán ăn</string>
+    <string name="giatoida">Giá tối đa</string>
+    <string name="giatoithieu">Giá tối thiểu</string>
+    <string name="khonggiaohang">Không giao hàng</string>
+    <string name="giomocua">Giờ mở cửa</string>
+    <string name="giodongcua">Giờ đóng cửa</string>
+    <string name="chinhanh">Chi nhánh</string>
+    <string name="tenmon">Tên món</string>
+    <string name="giatien">Giá tiền</string>
+    <string name="luuquanan">Lưu quán ăn</string>
+    <string name="themthucdon">Thêm thực đơn</string>
+    <string name="theloai">Thể loại</string>
+    <string name="yeucaudangnhap">Bạn cần đăng nhập để xem</string>
+</resources>

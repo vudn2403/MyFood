@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:id="@+id/cardViewOdau">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txtDiemTrungBinhQuanAn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_cycle"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/colorAccent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTenQuanQuanOdau"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Olympia"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtDiaChiQuanAnODau"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phố Viên, phường Đức Thắng" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_gravity="bottom"
+                android:id="@+id/txtKhoangCachQuanAnODau"
+                android:drawableLeft="@drawable/outline_near_me_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:text="0.6 km" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageHinhQuanAnOdau"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hinhtest" />
+
+        <Button
+            android:id="@+id/btnDatMonOdau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_radius_5dp"
+            android:drawableTop="@drawable/ic_local_shipping_white_24dp"
+            android:padding="5dp"
+            android:text="@string/datmon"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/containerBinhLuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cicleImageUser"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:src="@drawable/background"
+                android:text="6.8"
+                android:textColor="@color/colorAccent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTieudebinhluan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Olympia"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtNodungbinhluan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phố Viên, phường Đức Thắng" />
+
+            </LinearLayout>
+
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/background_cycle"
+                android:id="@+id/txtChamDiemBinhLuan"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerBinhLuan2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cicleImageUser2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:src="@drawable/background"
+                android:text="6.8"
+                android:textColor="@color/colorAccent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTieudebinhluan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Olympia"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtNodungbinhluan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phố Viên, phường Đức Thắng" />
+
+            </LinearLayout>
+
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/background_cycle"
+                android:id="@+id/txtChamDiemBinhLuan2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="9.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp">
+
+            <TextView
+                android:id="@+id/txtTongBinhLuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/ic_insert_comment_black_24dp"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/txtTongHinhBinhLuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="0" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

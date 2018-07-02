@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@color/transparentBackgroundDangnhap"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+        android:text="Liên hệ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:padding="16dp"
+        android:id="@+id/txt_so_dt"
+        android:gravity="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        android:text="(024) 62 859 859"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorBackgroungTrangChu"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <LinearLayout
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/btn_goi_dien"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_weight="1"
+            android:text="Gọi điện"
+            android:background="@color/colorPrimary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/btn_nhan_tin"
+            android:layout_marginLeft="1dp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_weight="1"
+            android:text="Nhắn tin"
+            android:background="@color/colorPrimary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

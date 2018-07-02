@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparentBackgroundDangnhap" />
+
+    <LinearLayout
+        android:id="@+id/lnl_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_anh_dai_dien"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_ten_nguoi_dung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Vũ Đinh Ngọc" />
+
+                <TextView
+                    android:id="@+id/txt_so_dien_thoai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0969889533" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparentBackgroundDangnhap"
+            android:padding="8dp"
+            android:text="Thiết lập tài khoản"
+            android:textAllCaps="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+        <LinearLayout
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn_cap_nhat_anh_dai_dien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/outline_face_black_24dp"
+                android:padding="4dp"
+                android:text="  Thay ảnh đại diện" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/transparentBackgroundDangnhap" />
+
+            <TextView
+                android:id="@+id/btn_cap_nhat_thong_tin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/outline_account_circle_black_24dp"
+                android:padding="4dp"
+                android:text="  Cập nhật thông tin liên hệ" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/transparentBackgroundDangnhap" />
+
+            <TextView
+                android:id="@+id/btn_thay_doi_mat_khau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/outline_https_black_24dp"
+                android:padding="4dp"
+                android:text="  Thay đổi mật khẩu" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/transparentBackgroundDangnhap" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparentBackgroundDangnhap"
+            android:padding="8dp"
+            android:text="mục khác"
+            android:textAllCaps="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+        <LinearLayout
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn_lien_he"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/outline_mail_outline_black_24dp"
+                android:padding="4dp"
+                android:text="  Liên hệ" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/transparentBackgroundDangnhap" />
+
+            <TextView
+                android:id="@+id/btn_dang_xuat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/outline_power_settings_new_black_24dp"
+                android:padding="4dp"
+                android:text="  Đăng xuất" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/transparentBackgroundDangnhap" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/transparentBackgroundDangnhap"
+            android:gravity="center"
+            android:text="Phiên bản 1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/ic_user_2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yeucaudangnhap"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+    </LinearLayout>
+</RelativeLayout>

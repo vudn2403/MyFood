@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@color/colorAccent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:maxLines="2"
+            android:textStyle="bold"
+            android:id="@+id/txt_restaurant_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Tên quán ăn"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:paddingLeft="8dp"
+            android:gravity="top"
+            android:layout_gravity="top"
+            android:textSize="16sp"
+            android:id="@+id/txt_payment_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500.000 VNĐ"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mã đơn hàng"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Mới đây"
+            android:id="@+id/txt_order_time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đang xử lý"
+            android:textAlignment="textEnd" />
+    </LinearLayout>
+</LinearLayout>

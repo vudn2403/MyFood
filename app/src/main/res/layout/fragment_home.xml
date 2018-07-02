@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".view.main.MainActivity">
+
+    <TextView
+        android:background="@color/transparentBackgroundDangnhap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/lnl_command"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <Button
+            android:id="@+id/btn_show_map"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:drawableRight="@drawable/baseline_place_black_24dp"
+            android:paddingRight="16dp"
+            android:text="Bản đồ"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_sort"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:drawableRight="@drawable/baseline_sort_black_24dp"
+            android:paddingRight="16dp"
+            android:text="Sắp xếp"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:drawableRight="@drawable/baseline_filter_black_24dp"
+            android:paddingRight="16dp"
+            android:text="Bộ lọc"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lnl_command">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnl_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/pgb_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:progressDrawable="@drawable/custom_progress_bar" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đang tải dữ liệu, vui lòng chờ trong giây lát..."
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+    </LinearLayout>
+</RelativeLayout>

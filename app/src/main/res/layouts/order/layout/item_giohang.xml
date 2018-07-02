@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:gravity="center">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="@drawable/background"
+        android:id="@+id/img_monan"
+        android:layout_width="96dp"
+        android:layout_height="96dp" />
+    <LinearLayout
+        android:paddingLeft="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:text="Tên món ăn"
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:text="100.000 VNĐ"
+            android:id="@+id/txt_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgGiamSoLuong"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_minus" />
+
+            <TextView
+                android:gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:id="@+id/txtSoLuong"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:text="0"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgTangSoLuong"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_add" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/btn_xoa_mon_an"
+        android:layout_gravity="center"
+        android:src="@drawable/baseline_delete_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

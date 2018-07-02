@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/nav_home" />
+
+        <item
+            android:id="@+id/nav_bookmark"
+            android:icon="@drawable/ic_bookmark_black_24dp"
+            android:title="@string/nav_bookmark" />
+
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/baseline_assignment_black_24dp"
+            android:title="@string/nav_orders" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/nav_profile" />
+
+    </group>
+    <item android:title= "Mục khác">
+        <menu>
+            <item android:id="@+id/nav_de_xuat_quan_an"
+                android:title="Đề xuất địa điểm"/>
+            <item
+                android:id="@+id/nav_about_us"
+                android:title="@string/nav_about_us" />
+            <item
+                android:id="@+id/nav_privacy_policy"
+                android:title="@string/nav_privacy_policy" />
+            <item
+                android:visible="false"
+                android:id="@+id/nav_sign_out"
+                android:title="Đăng xuất"/>
+        </menu>
+    </item>
+
+
+</menu>

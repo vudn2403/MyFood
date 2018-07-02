@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparentBackgroundDangnhap"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Thay đổi mật khẩu"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:padding="8dp"
+        android:id="@+id/txt_tai_khoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+    <EditText
+        android:padding="8dp"
+        android:id="@+id/edt_mat_khau_cu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mật khẩu cũ"
+        android:theme="@style/AppTheme.PopupOverlay" />
+
+    <EditText
+        android:padding="8dp"
+        android:id="@+id/edt_mat_khau_moi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mật khẩu mới"
+        android:theme="@style/AppTheme.PopupOverlay" />
+
+    <Button
+        android:id="@+id/btn_cap_nhat_mat_khau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Cập nhật"
+        android:textColor="@color/colorAccent" />
+</LinearLayout>

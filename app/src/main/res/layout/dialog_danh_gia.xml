@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparentBackgroundDangnhap"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Vui lòng đưa ra điểm đánh giá"
+        android:textAllCaps="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+    <NumberPicker
+        android:id="@+id/nbp_danh_gia"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></NumberPicker>
+
+    <Button
+        android:id="@+id/btn_dong_y"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimary"
+        android:text="Đồng ý"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
