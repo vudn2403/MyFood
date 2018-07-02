@@ -1,15 +1,15 @@
 package com.vudn.myfood.presenter.restaurant;
 
-import com.vudn.myfood.model.restaurant.BinhLuanModel;
-import com.vudn.myfood.model.restaurant.ThucDonModel;
+import com.vudn.myfood.model.comment.BinhLuanModel;
+import com.vudn.myfood.model.menu.ThucDonModel;
 import com.vudn.myfood.view.restaurant.ChiTietQuanAnView;
 
 import java.util.List;
 
 public class ChiTietQuanAnPresenterImpl implements ChiTietQuanAnPresenter {
-    ChiTietQuanAnView chiTietQuanAnView;
-    ThucDonModel thucDonModel;
-    BinhLuanModel binhLuanModel;
+    private ChiTietQuanAnView chiTietQuanAnView;
+    private ThucDonModel thucDonModel;
+    private BinhLuanModel binhLuanModel;
 
     public ChiTietQuanAnPresenterImpl(ChiTietQuanAnView chiTietQuanAnView) {
         this.chiTietQuanAnView = chiTietQuanAnView;

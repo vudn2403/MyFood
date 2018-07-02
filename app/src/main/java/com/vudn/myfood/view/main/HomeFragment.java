@@ -19,14 +19,14 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.vudn.myfood.R;
-import com.vudn.myfood.adapter.main.DsQuanAnAdapter;
+import com.vudn.myfood.adapter.restaurant.DanhSachQuanAnAdapter;
 import com.vudn.myfood.base.Key;
 import com.vudn.myfood.model.restaurant.QuanAnModel;
 import com.vudn.myfood.presenter.main.HomePresenter;
 import com.vudn.myfood.presenter.main.HomePresenterImpl;
 import com.vudn.myfood.view.order.DatGiaoHangActivity;
-import com.vudn.myfood.view.other.BottomSheetFilterFragment;
-import com.vudn.myfood.view.other.BottomSheetSortFragment;
+import com.vudn.myfood.view.bottom_sheet.BottomSheetFilterFragment;
+import com.vudn.myfood.view.bottom_sheet.BottomSheetSortFragment;
 import com.vudn.myfood.view.map.MapActivity;
 import com.vudn.myfood.view.restaurant.ChiTietQuanAnActivity;
 
@@ -38,7 +38,7 @@ import static android.support.v7.widget.LinearLayoutManager.VERTICAL;
 public class HomeFragment extends Fragment implements
         HomeView,
         View.OnClickListener,
-        DsQuanAnAdapter.OnQuanAnModelClickListener,
+        DanhSachQuanAnAdapter.OnQuanAnModelClickListener,
         BottomSheetSortFragment.OnSapXepClickListener,
         BottomSheetFilterFragment.OnFilterListener{
     public static final String TAG = "HomeFragment";
@@ -53,7 +53,7 @@ public class HomeFragment extends Fragment implements
     private SharedPreferences sharedPreferences;
 
     private HomePresenter restaurantPresenter;
-    private DsQuanAnAdapter dsQuanAnAdapter;
+    private DanhSachQuanAnAdapter dsQuanAnAdapter;
 
     private List<QuanAnModel> quanAnModelList;
     private Location vitrihientai;
@@ -90,7 +90,7 @@ public class HomeFragment extends Fragment implements
         rcvRestaurant = view.findViewById(R.id.rcv_restaurant);
         rcvRestaurant.setLayoutManager(new LinearLayoutManager(getContext(), VERTICAL, false));
         rcvRestaurant.setHasFixedSize(true);
-        dsQuanAnAdapter = new DsQuanAnAdapter(getContext(), quanAnModelList, R.layout.custom_layout_recyclerview_odau, this);
+        dsQuanAnAdapter = new DanhSachQuanAnAdapter(getContext(), quanAnModelList, R.layout.custom_layout_recyclerview_odau, this);
         rcvRestaurant.setAdapter(dsQuanAnAdapter);
         lnlLoading = view.findViewById(R.id.lnl_loading);
 

@@ -1,7 +1,7 @@
 package com.vudn.myfood.view.restaurant;
 
-import com.vudn.myfood.model.restaurant.BinhLuanModel;
-import com.vudn.myfood.model.restaurant.ThucDonModel;
+import com.vudn.myfood.model.comment.BinhLuanModel;
+import com.vudn.myfood.model.menu.ThucDonModel;
 
 import java.util.List;
 

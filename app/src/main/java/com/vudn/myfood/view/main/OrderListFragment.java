@@ -18,27 +18,26 @@ import android.widget.LinearLayout;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.vudn.myfood.R;
-import com.vudn.myfood.adapter.main.DsDonHangAdapter;
+import com.vudn.myfood.adapter.order.DanhSachDonHangAdapter;
 import com.vudn.myfood.base.Key;
 import com.vudn.myfood.model.order.ChiTietDonHangModel;
 import com.vudn.myfood.model.order.DonHangModel;
-import com.vudn.myfood.model.restaurant.MonAnModel;
+import com.vudn.myfood.model.menu.MonAnModel;
 import com.vudn.myfood.view.order.ChiTietDonHangActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class OrderListFragment extends Fragment implements View.OnClickListener, DsDonHangAdapter.OnDonHangClickListener {
+public class OrderListFragment extends Fragment implements View.OnClickListener, DanhSachDonHangAdapter.OnDonHangClickListener {
     public static final String TAG = "OrderListFragment";
     private LinearLayout btnSignIn;
     private LinearLayout lnlLoading;
     private RecyclerView rcvOrder;
-    private DsDonHangAdapter dsDonHangAdapter;
+    private DanhSachDonHangAdapter dsDonHangAdapter;
     private List<DonHangModel> donHangModelList;
     List<ChiTietDonHangModel> chiTietDonHangModelList;
     private SharedPreferences sharedPreferencesDangNhap;
@@ -64,7 +63,7 @@ public class OrderListFragment extends Fragment implements View.OnClickListener,
         rcvOrder = view.findViewById(R.id.rcv_order);
         rcvOrder.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
         rcvOrder.setHasFixedSize(true);
-        dsDonHangAdapter = new DsDonHangAdapter(getContext(), donHangModelList, this);
+        dsDonHangAdapter = new DanhSachDonHangAdapter(getContext(), donHangModelList, this);
         rcvOrder.setAdapter(dsDonHangAdapter);
         rcvOrder.addItemDecoration(new DividerItemDecoration(getContext(), DividerItemDecoration.VERTICAL));
         btnSignIn.setOnClickListener(this);
@@ -200,7 +199,7 @@ public class OrderListFragment extends Fragment implements View.OnClickListener,
             lnlLoading.setVisibility(View.VISIBLE);
         }else {
             lnlLoading.setVisibility(View.GONE);
-            dsDonHangAdapter = new DsDonHangAdapter(getContext(), donHangModelList, this);
+            dsDonHangAdapter = new DanhSachDonHangAdapter(getContext(), donHangModelList, this);
             rcvOrder.setAdapter(dsDonHangAdapter);
             dsDonHangAdapter.notifyDataSetChanged();
         }

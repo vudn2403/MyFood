@@ -1,7 +1,6 @@
 package com.vudn.myfood.presenter.user;
 
 import com.google.firebase.auth.FirebaseUser;
-import com.vudn.myfood.model.user.MyUser;
 import com.vudn.myfood.model.user.ThanhVienModel;
 import com.vudn.myfood.view.user.UserView;
 

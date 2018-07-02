@@ -16,7 +16,6 @@ import com.vudn.myfood.base.BaseActivity;
 import com.vudn.myfood.base.Key;
 import com.vudn.myfood.model.order.ChiTietDonHangModel;
 import com.vudn.myfood.model.order.DonHangModel;
-import com.vudn.myfood.model.restaurant.MonAnModel;
 
 import java.util.ArrayList;
 import java.util.List;

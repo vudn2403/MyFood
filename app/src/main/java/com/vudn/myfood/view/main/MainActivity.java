@@ -37,9 +37,8 @@ import com.vudn.myfood.base.BaseActivity;
 import com.vudn.myfood.base.Key;
 import com.vudn.myfood.model.restaurant.QuanAnModel;
 
-import com.vudn.myfood.util.NetworkChangeReceiver;
+import com.vudn.myfood.receiver.NetworkChangeReceiver;
 import com.vudn.myfood.util.ViewPagerTransformer;
-import com.vudn.myfood.view.map.MapActivity;
 import com.vudn.myfood.view.restaurant.ThemQuanAnActivity;
 import com.vudn.myfood.view.other.AboutUsActivity;
 import com.vudn.myfood.view.other.PolicyActivity;

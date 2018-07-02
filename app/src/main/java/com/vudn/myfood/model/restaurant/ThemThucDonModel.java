@@ -3,9 +3,11 @@ package com.vudn.myfood.model.restaurant;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import com.vudn.myfood.model.menu.MonAnModel;
+
 public class ThemThucDonModel implements Parcelable{
-    String mathucdon;
-    MonAnModel monAnModel;
+    private String mathucdon;
+    private MonAnModel monAnModel;
 
     public ThemThucDonModel() {
     }

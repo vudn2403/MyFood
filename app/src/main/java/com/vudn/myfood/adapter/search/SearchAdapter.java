@@ -1,7 +1,6 @@
 package com.vudn.myfood.adapter.search;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -16,7 +15,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.vudn.myfood.R;
-import com.vudn.myfood.model.restaurant.BinhLuanModel;
+import com.vudn.myfood.model.comment.BinhLuanModel;
 import com.vudn.myfood.model.restaurant.QuanAnModel;
 import com.vudn.myfood.util.SortQuanAn;
 

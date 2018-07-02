@@ -22,7 +22,6 @@ import android.support.v7.widget.Toolbar;
 import android.widget.Toast;
 
 import com.vudn.myfood.R;
-import com.vudn.myfood.adapter.main.DsQuanAnAdapter;
 import com.vudn.myfood.adapter.search.SearchAdapter;
 import com.vudn.myfood.base.BaseActivity;
 import com.vudn.myfood.base.Key;
@@ -30,8 +29,8 @@ import com.vudn.myfood.model.restaurant.QuanAnModel;
 import com.vudn.myfood.presenter.search.SearchPresenter;
 import com.vudn.myfood.presenter.search.SearchPresenterImpl;
 import com.vudn.myfood.view.order.DatGiaoHangActivity;
-import com.vudn.myfood.view.other.BottomSheetFilterFragment;
-import com.vudn.myfood.view.other.BottomSheetSortFragment;
+import com.vudn.myfood.view.bottom_sheet.BottomSheetFilterFragment;
+import com.vudn.myfood.view.bottom_sheet.BottomSheetSortFragment;
 import com.vudn.myfood.view.main.MainActivity;
 import com.vudn.myfood.view.map.MapActivity;
 import com.vudn.myfood.view.restaurant.ChiTietQuanAnActivity;

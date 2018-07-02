@@ -5,8 +5,8 @@ import android.support.v7.widget.RecyclerView;
 
 
 import com.vudn.myfood.R;
-import com.vudn.myfood.adapter.restaurant.AdapterDanhSachWifi;
-import com.vudn.myfood.model.restaurant.WifiQuanAnModel;
+import com.vudn.myfood.adapter.wifi.DanhSachWifiAdapter;
+import com.vudn.myfood.model.wifi.WifiQuanAnModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,9 +16,9 @@ import java.util.List;
  */
 
 public class CapNhatWifiController {
-    WifiQuanAnModel wifiQuanAnModel;
-    Context context;
-    List<WifiQuanAnModel> wifiQuanAnModelList;
+    private WifiQuanAnModel wifiQuanAnModel;
+    private Context context;
+    private List<WifiQuanAnModel> wifiQuanAnModelList;
 
     public CapNhatWifiController(Context context){
         wifiQuanAnModel = new WifiQuanAnModel();
@@ -33,7 +33,7 @@ public class CapNhatWifiController {
             public void HienThiDanhSachWifi(WifiQuanAnModel wifiQuanAnModel) {
 
                 wifiQuanAnModelList.add(wifiQuanAnModel);
-                AdapterDanhSachWifi adapterDanhSachWifi = new AdapterDanhSachWifi(context, R.layout.layout_wifi_chitietquanan,wifiQuanAnModelList);
+                DanhSachWifiAdapter adapterDanhSachWifi = new DanhSachWifiAdapter(context, R.layout.layout_wifi_chitietquanan,wifiQuanAnModelList);
                 recyclerView.setAdapter(adapterDanhSachWifi);
                 adapterDanhSachWifi.notifyDataSetChanged();
             }

@@ -30,7 +30,7 @@ import com.vudn.myfood.R;
 import com.vudn.myfood.base.BaseActivity;
 import com.vudn.myfood.base.Key;
 import com.vudn.myfood.model.map.MapManager;
-import com.vudn.myfood.model.restaurant.BinhLuanModel;
+import com.vudn.myfood.model.comment.BinhLuanModel;
 import com.vudn.myfood.model.restaurant.QuanAnModel;
 import com.vudn.myfood.model.user.ThanhVienModel;
 import com.vudn.myfood.view.main.MainActivity;

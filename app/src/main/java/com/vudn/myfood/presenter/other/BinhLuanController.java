@@ -2,12 +2,12 @@ package com.vudn.myfood.presenter.other;
 
 
 
-import com.vudn.myfood.model.restaurant.BinhLuanModel;
+import com.vudn.myfood.model.comment.BinhLuanModel;
 
 import java.util.List;
 
 public class BinhLuanController {
-    BinhLuanModel binhLuanModel;
+    private BinhLuanModel binhLuanModel;
 
     public  BinhLuanController(){
         binhLuanModel = new BinhLuanModel();

@@ -1,6 +1,5 @@
 package com.vudn.myfood.view.order;
 
-import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -21,28 +20,26 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.vudn.myfood.R;
-import com.vudn.myfood.adapter.order.AdapterMonAn;
-import com.vudn.myfood.adapter.order.AdapterThucDon;
+import com.vudn.myfood.adapter.order.MonAnAdapter;
+import com.vudn.myfood.adapter.order.ThucDonAdapter;
 import com.vudn.myfood.base.BaseActivity;
 import com.vudn.myfood.base.Key;
 import com.vudn.myfood.model.order.ChiTietDonHangModel;
 import com.vudn.myfood.model.order.DonHangModel;
-import com.vudn.myfood.model.restaurant.MonAnModel;
+import com.vudn.myfood.model.menu.MonAnModel;
 import com.vudn.myfood.model.restaurant.QuanAnModel;
-import com.vudn.myfood.model.restaurant.ThucDonModel;
+import com.vudn.myfood.model.menu.ThucDonModel;
 import com.vudn.myfood.presenter.order.DatGiaoHangPresenter;
 import com.vudn.myfood.presenter.order.DatGiaoHangPresenterImpl;
-import com.vudn.myfood.view.main.MainActivity;
 import com.vudn.myfood.view.user.UserActivity;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-public class DatGiaoHangActivity extends BaseActivity implements DatGiaoHangView, View.OnClickListener, AdapterMonAn.OnSoLuongMonAnThayDoiListener {
+public class DatGiaoHangActivity extends BaseActivity implements DatGiaoHangView, View.OnClickListener, MonAnAdapter.OnSoLuongMonAnThayDoiListener {
     public static final String TAG = "DatGiaoHangActivity";
     private TextView txtTenQuanAn, txtDiaChi, txtThoiGianHoatDong, txtTrangThaiHoatDong;
     private ImageView imHinhAnhQuanAn;
@@ -51,7 +48,7 @@ public class DatGiaoHangActivity extends BaseActivity implements DatGiaoHangView
     private TextView txtTieuDeToolbar;
     private QuanAnModel quanAnModel;
     private List<ThucDonModel> thucDonModelList;
-    private AdapterThucDon adapterThucDon;
+    private ThucDonAdapter adapterThucDon;
     private DatGiaoHangPresenter datGiaoHangPresenter;
     private LinearLayout btnGiaoHang;
     private TextView txtInfo;
@@ -93,7 +90,7 @@ public class DatGiaoHangActivity extends BaseActivity implements DatGiaoHangView
         recyclerThucDon.setLayoutManager(new LinearLayoutManager(DatGiaoHangActivity.this, LinearLayoutManager.VERTICAL, false));
         recyclerThucDon.setHasFixedSize(true);
         /*thucDonModelList = new ArrayList<>();
-        adapterThucDon = new AdapterThucDon(this,thucDonModelList);
+        adapterThucDon = new ThucDonAdapter(this,thucDonModelList);
         recyclerThucDon.setAdapter(adapterThucDon);*/
         hienThiThucDonQuanAn();
         /*if (quanAnModel.getThucDons().isEmpty()){
@@ -213,7 +210,7 @@ public class DatGiaoHangActivity extends BaseActivity implements DatGiaoHangView
     }
 
     void setUpThucDonAdapter(List<ThucDonModel> thucDonModelList) {
-        adapterThucDon = new AdapterThucDon(this, thucDonModelList, this);
+        adapterThucDon = new ThucDonAdapter(this, thucDonModelList, this);
         recyclerThucDon.setAdapter(adapterThucDon);
         adapterThucDon.notifyDataSetChanged();
         Log.d(TAG, TAG + " onSuccess: " + adapterThucDon.getItemCount());

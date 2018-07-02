@@ -35,13 +35,13 @@
     <string name="search_hint">Nhập tên quán ăn ...</string>
 
     //Other
-    <string name="phienban">Phiên bản</string>
+    <string name="phienban">Phiên bản 1.0</string>
     <string name="dangtai">Đang tải...</string>
     <string name="email">Email</string>
     <string name="matkhau">Mật khẩu</string>
     <string name="dangnhap">Đăng nhập</string>
     <string name="hoac">Hoặc</string>
-    <string name="app_id">177837392877482</string>
+    <string name="google_api_key">AIzaSyBrpJYrYpk0b_eC6hyungNMGItxEyVswuE</string>
     <string name="facebook_app_id">177837392877482</string>
     <string name="fb_login_protocol_scheme">fb177837392877482</string>
     <string name="dangnhapfacebook">Đăng nhập bằng Facebook</string>

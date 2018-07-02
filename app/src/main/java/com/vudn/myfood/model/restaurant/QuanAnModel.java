@@ -10,6 +10,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.vudn.myfood.model.address.DiaChiModel;
+import com.vudn.myfood.model.comment.BinhLuanModel;
+import com.vudn.myfood.model.menu.ThucDonModel;
 import com.vudn.myfood.model.user.ThanhVienModel;
 import com.vudn.myfood.presenter.main.HomePresenter;
 import com.vudn.myfood.presenter.search.SearchPresenter;
@@ -17,7 +20,6 @@ import com.vudn.myfood.presenter.search.SearchPresenter;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Random;
 
 public class QuanAnModel implements Parcelable {
     public static final String TAG = "QuanAnModel";

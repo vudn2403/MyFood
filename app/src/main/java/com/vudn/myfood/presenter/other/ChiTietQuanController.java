@@ -3,8 +3,7 @@ package com.vudn.myfood.presenter.other;
 import android.widget.TextView;
 
 
-import com.vudn.myfood.model.restaurant.WifiQuanAnModel;
-import com.vudn.myfood.presenter.other.ChiTietQuanAnInterface;
+import com.vudn.myfood.model.wifi.WifiQuanAnModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,8 +11,8 @@ import java.util.List;
 
 public class ChiTietQuanController {
 
-    WifiQuanAnModel wifiQuanAnModel;
-    List<WifiQuanAnModel> wifiQuanAnModelList;
+    private WifiQuanAnModel wifiQuanAnModel;
+    private List<WifiQuanAnModel> wifiQuanAnModelList;
 
     public ChiTietQuanController(){
         wifiQuanAnModel = new WifiQuanAnModel();

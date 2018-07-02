@@ -3,7 +3,7 @@ package com.vudn.myfood.model.order;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.vudn.myfood.model.restaurant.MonAnModel;
+import com.vudn.myfood.model.menu.MonAnModel;
 
 public class ChiTietDonHangModel implements Parcelable {
     private MonAnModel monan;

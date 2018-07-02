@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.vudn.myfood.view.beginscreen.SlashScreenActivity">
+    tools:context="com.vudn.myfood.view.start_screen.SlashScreenActivity">
 
     <ImageView
+        android:contentDescription="Hình nền khởi động"
         android:id="@+id/img_slash_screen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -38,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/txt_app_name"
         android:layout_centerHorizontal="true"
-        android:text="Phiên bản 1.0"
+        android:text="@string/phienban"
         android:textColor="@android:color/background_light" />
 
     <TextView

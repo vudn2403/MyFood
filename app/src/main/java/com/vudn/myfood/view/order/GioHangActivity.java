@@ -2,7 +2,6 @@ package com.vudn.myfood.view.order;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.DividerItemDecoration;
@@ -23,7 +22,7 @@ import com.vudn.myfood.model.order.ChiTietDonHangModel;
 import com.vudn.myfood.model.order.DonHangModel;
 import com.vudn.myfood.presenter.order.GioHangPresenter;
 import com.vudn.myfood.presenter.order.GioHangPresenterImpl;
-import com.vudn.myfood.view.other.ThanhToanDialog;
+import com.vudn.myfood.view.dialog.ThanhToanDialog;
 
 import java.util.List;
 

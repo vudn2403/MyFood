@@ -8,7 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.vudn.myfood.adapter.main.DsQuanAnAdapter;
+import com.vudn.myfood.adapter.restaurant.DanhSachQuanAnAdapter;
 import com.vudn.myfood.model.restaurant.QuanAnModel;
 
 
@@ -21,7 +21,7 @@ public class OdauController {
     public static final String TAG = "OdauController";
     Context context;
     QuanAnModel quanAnModel;
-    DsQuanAnAdapter adapterRecyclerOdau;
+    DanhSachQuanAnAdapter adapterRecyclerOdau;
     int itemdaco = 10;
 
     public OdauController(Context context){
@@ -33,7 +33,7 @@ public class OdauController {
 
         final List<QuanAnModel> quanAnModelList = new ArrayList<>();
         recyclerOdau.setLayoutManager(new LinearLayoutManager(context, VERTICAL, false));
-        //adapterRecyclerOdau = new DsQuanAnAdapter(context,quanAnModelList, R.layout.custom_layout_recyclerview_odau);
+        //adapterRecyclerOdau = new DanhSachQuanAnAdapter(context,quanAnModelList, R.layout.custom_layout_recyclerview_odau);
         recyclerOdau.setAdapter(adapterRecyclerOdau);
         linearLayout.setVisibility(View.VISIBLE);
 

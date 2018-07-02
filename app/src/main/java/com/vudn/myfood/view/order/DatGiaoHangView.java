@@ -1,6 +1,6 @@
 package com.vudn.myfood.view.order;
 
-import com.vudn.myfood.model.restaurant.ThucDonModel;
+import com.vudn.myfood.model.menu.ThucDonModel;
 
 import java.util.List;
 

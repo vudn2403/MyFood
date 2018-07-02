@@ -3,7 +3,6 @@ package com.vudn.myfood.view.restaurant;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v7.widget.LinearLayoutManager;
@@ -11,7 +10,6 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ExpandableListView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.MediaController;
@@ -37,20 +35,21 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.vudn.myfood.R;
-import com.vudn.myfood.adapter.restaurant.ApdaterBinhLuan;
-import com.vudn.myfood.adapter.restaurant.ThucDonQuanAnAdapter;
+import com.vudn.myfood.adapter.comment.BinhLuanApdater;
 import com.vudn.myfood.base.BaseActivity;
 import com.vudn.myfood.base.Key;
-import com.vudn.myfood.model.map.MyLocation;
-import com.vudn.myfood.model.restaurant.BinhLuanModel;
+import com.vudn.myfood.model.comment.BinhLuanModel;
 import com.vudn.myfood.model.restaurant.QuanAnModel;
-import com.vudn.myfood.model.restaurant.ThucDonModel;
-import com.vudn.myfood.model.restaurant.TienIchModel;
+import com.vudn.myfood.model.menu.ThucDonModel;
+import com.vudn.myfood.model.util.TienIchModel;
 import com.vudn.myfood.presenter.restaurant.ChiTietQuanAnPresenter;
 import com.vudn.myfood.presenter.restaurant.ChiTietQuanAnPresenterImpl;
-import com.vudn.myfood.view.other.LienLacDialog;
+import com.vudn.myfood.view.comment.BinhLuanActivity;
+import com.vudn.myfood.view.dialog.LienLacDialog;
+import com.vudn.myfood.view.map.DanDuongToiQuanAnActivity;
+import com.vudn.myfood.view.menu.ThucDonActivity;
 import com.vudn.myfood.view.order.DatGiaoHangActivity;
-import com.vudn.myfood.view.other.TienIchDialog;
+import com.vudn.myfood.view.dialog.TienIchDialog;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
@@ -71,7 +70,7 @@ public class ChiTietQuanAnActivity extends BaseActivity implements OnMapReadyCal
     QuanAnModel quanAnModel;
     Toolbar toolbar;
     RecyclerView recyclerViewBinhLuan;
-    ApdaterBinhLuan adapterBinhLuan;
+    BinhLuanApdater adapterBinhLuan;
     GoogleMap googleMap;
     MapFragment mapFragment;
     LinearLayout khungTienIch;
@@ -325,7 +324,7 @@ public class ChiTietQuanAnActivity extends BaseActivity implements OnMapReadyCal
     }
 
     private void setUpBinhLuanAdapter(List<BinhLuanModel> binhLuanModelList) {
-        adapterBinhLuan = new ApdaterBinhLuan(this, R.layout.custom_layout_binhluan, binhLuanModelList);
+        adapterBinhLuan = new BinhLuanApdater(this, R.layout.item_binhluan, binhLuanModelList);
         recyclerViewBinhLuan.setAdapter(adapterBinhLuan);
         adapterBinhLuan.notifyDataSetChanged();
     }
